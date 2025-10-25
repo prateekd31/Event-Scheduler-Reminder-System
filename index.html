@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Reminder & Scheduler</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📅 Event Reminder System</h1>
+      <button id="themeToggle">🌙</button>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="eventName" placeholder="Enter Event Name" />
+      <input type="datetime-local" id="eventDate" />
+      <select id="eventCategory">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Birthday">Birthday</option>
+        <option value="Other">Other</option>
+      </select>
+      <button id="addEventBtn">Add</button>
+    </div>
+
+    <ul id="eventList"></ul>
+  </div>
+
+  <!-- Alert sound -->
+  <audio id="alertSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

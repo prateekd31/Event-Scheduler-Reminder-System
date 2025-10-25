@@ -1,0 +1,145 @@
+/* -------- Base Styles -------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding-top: 40px;
+  transition: background 0.4s, color 0.4s;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 550px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#themeToggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+
+#addEventBtn {
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 0.4;
+}
+
+#addEventBtn:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* -------- Event List -------- */
+.event-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.event-item button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ff4c4c;
+}
+
+small {
+  color: #d1d1d1;
+}
+
+/* -------- Category Tags -------- */
+.category {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+  margin-top: 3px;
+}
+
+.Work { background: #ffc107; }
+.Personal { background: #17a2b8; }
+.Birthday { background: #e83e8c; }
+.Other { background: #6c757d; }
+
+/* -------- Progress Bar -------- */
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 5px;
+  background: lime;
+  width: 0%;
+  transition: width 1s linear;
+}
+
+/* -------- Dark Mode -------- */
+body.dark {
+  background: linear-gradient(135deg, #121212, #232323);
+  color: #eee;
+}
+
+body.dark .container {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body.dark #themeToggle {
+  color: #ffd700;
+}
